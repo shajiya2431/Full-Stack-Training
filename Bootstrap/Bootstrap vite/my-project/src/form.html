@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <main>
+        <section class="container py-5">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="card shadow">
+
+                        <div class="card-header bg-primary text-white text-center">
+                            <h2>Registration Form</h2>
+                        </div>
+
+                        <div class="card-body">
+
+                            <form class="needs-validation" novalidate>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName"
+                                            placeholder="Enter First Name" pattern="^[A-Za-z]+$" required>
+
+                                        <div class="invalid-feedback">
+                                            Please enter your first name.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName"
+                                            placeholder="Enter Last Name" pattern="^[A-Za-z]+$" required>
+
+                                        <div class="invalid-feedback">
+                                            Please enter your last name.
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter Email"
+                                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$" required>
+
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="mobile" class="form-label">Mobile Number</label>
+                                        <input type="tel" class="form-control" id="mobile"
+                                            placeholder="Enter Mobile Number" pattern="^(\+91|91)?[6-9][0-9]{9}$"
+                                            required>
+
+                                        <div class="invalid-feedback">
+                                            Please enter a valid 10-digit mobile number.
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="dob" class="form-label">Date of Birth</label>
+
+                                        <input type="date" class="form-control" id="dob" max="2008-12-31" required>
+
+                                        <div class="invalid-feedback">
+                                            Please select your date of birth.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+
+                                        <label class="form-label d-block">Gender</label>
+
+                                        <div class="form-check form-check-inline">
+
+                                            <input class="form-check-input" type="radio" name="gender" id="male"
+                                                required>
+
+                                            <label class="form-check-label" for="male">
+                                                Male
+                                            </label>
+
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+
+                                            <input class="form-check-input" type="radio" name="gender" id="female"
+                                                required>
+
+                                            <label class="form-check-label" for="female">
+                                                Female
+                                            </label>
+
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+
+                                            <input class="form-check-input" type="radio" name="gender" id="others"
+                                                required>
+
+                                            <label class="form-check-label" for="others">
+                                                Others
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6 mb-3">
+
+                                            <label for="country" class="form-label">
+                                                Country
+                                            </label>
+
+                                            <select class="form-select" id="country" required>
+
+                                                <option value="">Select Country</option>
+                                                <option>India</option>
+                                                <option>USA</option>
+                                                <option>Canada</option>
+                                                <option>Australia</option>
+
+                                            </select>
+
+                                            <div class="invalid-feedback">
+                                                Please select your country.
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+
+                                            <label for="city" class="form-label">
+                                                City
+                                            </label>
+
+                                            <select class="form-select" id="city" required>
+
+                                                <option value="">Select City</option>
+                                                <option>Patna</option>
+                                                <option>Delhi</option>
+                                                <option>Mumbai</option>
+                                                <option>Kolkata</option>
+
+                                            </select>
+
+                                            <div class="invalid-feedback">
+                                                Please select your city.
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="mb-3">
+
+                                        <label for="address" class="form-label">
+                                            Address
+                                        </label>
+
+                                        <textarea class="form-control" id="address" rows="3" placeholder="Enter Address"
+                                            required></textarea>
+
+                                        <div class="invalid-feedback">
+                                            Please enter your address.
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-6 mb-3">
+
+                                            <label for="password" class="form-label">
+                                                Password
+                                            </label>
+
+                                            <input type="password" class="form-control" id="password"
+                                                placeholder="Enter Password" minlength="6" required>
+
+                                            <div class="invalid-feedback">
+                                                Password must be at least 6 characters.
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+
+                                            <label for="confirmPassword" class="form-label">
+                                                Confirm Password
+                                            </label>
+
+                                            <input type="password" class="form-control" id="confirmPassword"
+                                                placeholder="Confirm Password" required>
+
+                                            <div class="invalid-feedback">
+                                                Password does not match.
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-check mb-4">
+
+                                        <input class="form-check-input" type="checkbox" id="terms" required>
+
+                                        <label class="form-check-label" for="terms">
+                                            I agree to Terms & Conditions
+                                        </label>
+
+                                        <div class="invalid-feedback">
+                                            Please accept Terms & Conditions.
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        Submit
+                                    </button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

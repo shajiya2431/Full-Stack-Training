@@ -1,0 +1,299 @@
+/* Header */
+.top-notification {
+    margin: 15px 15px 0;
+    padding: .875rem 0;
+    border-radius: var(--border-radius, 6px);
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+#top-header {
+    margin: 0 15px 0;
+    padding: .75rem 0;
+    border-bottom: 1px solid var(--border-color)
+}
+
+.menu-toggle {
+    width: 26px;
+    height: 18px;
+    position: relative;
+    margin-left: 8px;
+}
+
+.menu-toggle span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--heading-color)
+}
+
+.menu-toggle span:last-child {
+    bottom: 0;
+    width: 70%;
+    right: 0;
+}
+
+.menu-toggle span:nth-child(2) {
+    top: 50;
+    translate: 0 -30%
+}
+
+#top-header .top-menu {
+    display: none;
+}
+
+#top-header .top-menu a {
+    display: block;
+    padding: .5rem 1rem;
+    border-radius: var(--border-radius);
+}
+
+#top-header .top-menu .active a {
+    background: var(--border-color)
+}
+
+@media (min-width: 992px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    #top-header .top-menu {
+        display: flex;
+        margin-left: 50px;
+        gap: 6px;
+    }
+
+    #top-header .top-menu a {
+        padding: .75rem 1.25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .top-notification {
+        margin: 30px 30px 0;
+    }
+
+    #top-header {
+        margin: 0 30px 0;
+    }
+
+    #top-header {
+        padding: 1rem 0;
+    }
+} */
+
+/* Footer CSS */
+
+footer {
+    background: #fff;
+}
+
+footer .left-section .d-flex:not(a, span) {
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+
+}
+
+footer .right-section .d-flex {
+    gap: .5rem;
+    margin-top: .875rem;
+}
+
+footer :is(a, span) {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+footer .left-section :is(a, span) {
+    gap: .375rem;
+}
+
+footer .icon {
+    background-color: var(--body-bg);
+    border: 1px solid var(--border-color);
+}
+
+footer .icon:hover {
+    background-color: var(--primary);
+}
+
+footer .icon img {
+    transition: .4s all;
+}
+
+footer .icon:hover img {
+    filter: brightnesss(0) invert(1)
+}
+
+footer .footer-bottom {
+    padding-block: 50px 30px
+}
+
+footer .right-section>* {
+    flex-grow: 1;
+}
+
+@media (min-width: 992px) {
+    footer .right-section {
+        width: 60%
+    }
+}
+
+@media (min-width: 1200px) {
+    footer .container {
+        padding-block: 150px 50px;
+    }
+} */
+
+
+/* Home Banner Section */
+
+.top-banner {
+    padding-block: 3rem 5.5rem;
+}
+
+.top-banner .banner-content {
+    max-width: min(82%, 965px);
+    margin-inline: auto
+}
+
+.top-banner .banner-heading {
+    border-radius: .5rem;
+    padding: .875rem;
+    position: relative;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+.top-banner .banner-heading>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    translate: -50% -50%
+}
+.top-banner .banner-heading h1{
+    font-size: 1rem;
+    gap: 5px
+}
+.top-banner .banner-heading h2{
+    font-size: 1.74rem;
+}
+
+.banner-body {
+    display: grid;
+    gap: .625rem;
+}
+
+.banner-footer {
+    gap: .75rem;
+    margin-top: 3.125rem
+}
+
+.top-banner .logo-wrapper {
+    margin-top: 30px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.top-banner .swiper-slide {
+    background-color: #fff;
+    text-align: center;
+    padding-block: 20px;
+    border-right: 1px solid var(--border-color)
+}
+
+@media (min-width: 992px) {
+    .top-banner .banner-heading {
+        border-radius: .68rem;
+        padding-inline: .75rem;
+    }
+
+    .top-banner .banner-heading>img {
+        translate: -70% -70%
+    }
+
+    .top-banner .logo-wrapper{
+        margin-top: 5rem;
+        padding: 24px;
+    }
+    .top-banner .banner-heading h1{
+        font-size: 2.25rem;
+        gap: 8px
+    }
+}
+
+@media (min-width: 1400px) {
+    .top-banner .swiper-slide:last-child{
+        border: none
+    }
+}
+ 
+@media (min-width: 1400px) {
+    .top-banner .banner-heading {
+        border-radius: .68rem;
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .banner-footer {
+        margin-top: 3.75rem
+    }
+    .top-banner .logo-wrapper {
+        margin-top: 3rem;
+        padding: 30px;
+        border-radius: var(--border-radius);
+    }
+    .top-banner .banner-heading h1{
+        font-size: 3rem;
+        gap: 8px
+    }
+    .top-banner .banner-heading h2{
+        font-size: 2.37rem;
+    }
+}
+
+
+/* video-intro */
+
+.video-intro video{
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

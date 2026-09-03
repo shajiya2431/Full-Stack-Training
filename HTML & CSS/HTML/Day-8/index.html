@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration From</title>
+</head>
+<body>
+    <header>
+        <h1>User Registration From</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" required minlength="3" maxlength="50">
+            </div><br>
+         
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required 
+                pattern="[A-Za-z0-9]{5,15}"
+                title="Only letters and numbers (5-15 characters)">
+            </div><br>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Enter valid email address">
+            </div><br>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required
+                minlength="6" maxlength="20"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{6,20}"
+                title="Must contain 1 digit, 1 uppercase, 1 lowercase, number and 1 special character">
+            </div><br>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required
+                pattern="(\+91|91|0?)[6-9]{1}[0-9]{9}"
+                title="Enter valid Indian mobile number">
+            </div><br>
+
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" required> male
+                <input type="radio" name="gender" required> Female
+                <input type="radio" name="gender"required> Other
+            </div><br>
+
+            <div>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" required 
+                max="2008-05-12">
+            </div><br>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" required min="18" max="60">
+            </div><br>
+
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option>Select Country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Canada</option>
+                    <option>Other</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label>Skills:</label>
+                <label for="HTML">
+                    <input type="checkbox" name="skills" value="HTML" id="html" required> HTML
+                </label>
+                <label for="CSS">
+                    <input type="checkbox" name="skills" value="CSS" id="css"> CSS
+                </label>
+                <label for="JavaScript">
+                    <input type="checkbox" name="skills" value="JavaScript" id="javascript"> JavaScript
+                </label>
+                <label for="React">
+                    <input type="checkbox" name="skills" value="React" id="react"> React
+                </label>
+                <label for="Node.js">
+                    <input type="checkbox" name="skills" value="Node.js" id="node.js"> Node.js
+                </label>
+            </div><br>
+
+            <div>
+                <label for="about">About Yourself</label><br>
+                <textarea id="about" maxlength="400" rows="5" cols="30"></textarea>
+            </div><br>
+
+            <div>
+                <label>Website:</label>
+                <input type="url" placeholder="https://www.digitalclassworld.com/blog/full-form-of-url/">
+            </div><br>
+
+            <div>
+                <label>Profile Picture:</label>
+                <input type="file" id="file" accept=".jpg,.png">
+            </div><br>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div><br>
+        </form>
+    </main>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

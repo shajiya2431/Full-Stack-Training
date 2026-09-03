@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.first {
+
+    width: 80%;
+    height: 100vh;
+    margin: 20px auto;
+    background:
+    linear-gradient(#0c05cccc,
+    rgba(77, 71, 255, 0.8)),
+
+    url("./images/evie_default_bg.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+    color: white;
+    position: relative;
+}
+
+.first-content {
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first-content h1 {
+
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.first-content p {
+
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    color: #e7e7e7;
+}
+
+.first-content button {
+
+    padding: 14px 40px;
+    border: none;
+    border-radius: 30px;
+    background: #00d084;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.second {
+    width: 80%;
+    padding: 100px 20px;
+    margin: auto;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+
+.second h2 {
+
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.second-text {
+
+    color: gray;
+    margin-bottom: 80px;
+}
+
+.container {
+
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+
+    width: 300px;
+    margin: 0 auto 40px auto;
+}
+.card img {
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.card p {
+    color: gray;
+    line-height: 28px;
+}
+
+.feature {
+    text-align: center;
+    padding: 80px 100px;
+}
+
+.feature-image img {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.feature-text {
+    width: 700px;
+    margin: auto;
+}
+
+.feature-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.feature-text p {
+    color: gray;
+    line-height: 1.8;
+}
+
+.framework {
+    text-align: center;
+    padding: 80px 100px;
+    background: #f2f2f2;
+    /* light gray background */
+    width: 80%;
+    margin: auto;
+    /* center me lane ke liye */
+    border-radius: 10px;
+}
+
+.framework-image img {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.framework-text {
+
+    width: 700px;
+    margin: auto;
+}
+
+.framework-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.framework-text p {
+    color: gray;
+    line-height: 1.8;
+}
+
+.production {
+    text-align: center;
+    padding: 80px 100px;
+    margin-bottom: 80px;
+}
+
+.production-image img {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.production-text {
+    width: 700px;
+    margin: auto;
+}
+
+.production-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.production-text p {
+    color: gray;
+    line-height: 1.8;
+}
+
+footer {
+    background:#6c63ff;
+    padding:80px 20px;
+    margin-top:50px;
+
+}
+
+footer h2 {
+    font-size:40px;
+    margin-bottom:20px;
+    color:white;
+}
+
+footer button {
+    padding:14px 30px;
+    background:#00d084;
+    color:white;
+    font-size:16px;
+    border-radius:25px;
+    cursor:pointer;
+    margin-bottom:20px;
+    border:none;
+}
+
+footer p {
+    color: white;
+}
+
+.footer-bottom{
+    background: black;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.footer-bottom h3{
+    color: white;
+}

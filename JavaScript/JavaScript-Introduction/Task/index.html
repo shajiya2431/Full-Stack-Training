@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <h1>Student Result</h1>
+    <script>
+       
+        // Student Names
+        let names = ["Shahid", "Sharmin", "Saniya", "Inaya", "Neha"];
+
+        let marks = [
+            [85, 90, 78, 92, 88], 
+            [70, 75, 68, 72, 80],  
+            [60, 65, 58, 62, 70], 
+            [35, 45, 38, 42, 30],  
+            [95, 92, 90, 96, 94]   
+        ];
+
+
+        // VARIABLES
+    
+        let totalStudents = names.length;
+
+        let totalClassMarks = 0;
+
+        let highestTotal = 0;
+        let lowestTotal = 0;
+
+        let highestStudent = "";
+        let lowestStudent = "";
+
+        let gradeA = 0;
+        let gradeB = 0;
+        let gradeC = 0;
+        let gradeD = 0;
+        let gradeF = 0;
+
+
+        console.log("====================================");
+        console.log("       STUDENT RESULT      ");
+        console.log("====================================");
+
+
+        for (let i = 0; i < names.length; i++) {
+
+            let total = 0;
+            let passed = true;
+
+            // Calculate total marks
+            for (let j = 0; j < marks[i].length; j++) {
+
+                total = total + marks[i][j];
+
+                // Check every subject
+                if (marks[i][j] < 40) {
+                    passed = false;
+                }
+            }
+
+
+            // Calculate average
+            let average = total / marks[i].length;
+            
+            // 3 - Grade
+            
+            let grade = "";
+
+            if (average >= 90) {
+
+                grade = "A";
+                gradeA = gradeA + 1;
+
+            }
+            else if (average >= 75) {
+
+                grade = "B";
+                gradeB = gradeB + 1;
+
+            }
+            else if (average >= 60) {
+
+                grade = "C";
+                gradeC = gradeC + 1;
+
+            }
+            
+            else {
+
+                grade = "F";
+                gradeF = gradeF + 1;
+            }
+           
+            // 4 - Pass / Fail
+            let result = "";
+
+            if (passed === true) {
+                result = "Pass";
+            }
+            else {
+                result = "Fail";
+            }
+
+            
+            // 1 & 2 - Display Result
+            
+
+            console.log("------------------------------------");
+
+            console.log("Student Name:", names[i]);
+            console.log("Total Marks:", total);
+            console.log("Average Marks:", average);
+            console.log("Grade:", grade);
+            console.log("Result:", result);
+
+            // 5 - Highest Total
+            
+
+            if (i === 0) {
+
+                highestTotal = total;
+                highestStudent = names[i];
+
+                lowestTotal = total;
+                lowestStudent = names[i];
+
+            }
+            else {
+
+                if (total > highestTotal) {
+
+                    highestTotal = total;
+                    highestStudent = names[i];
+                }
+
+                // 6 - Lowest Total
+                
+                if (total < lowestTotal) {
+
+                    lowestTotal = total;
+                    lowestStudent = names[i];
+                }
+            }
+
+
+            // Add student's total to class total
+            totalClassMarks = totalClassMarks + total;
+        }
+
+        // 5 - Highest Marks Student
+        
+        console.log("------------------------------------");
+
+        console.log("Highest Total Marks:", highestTotal);
+        console.log("Highest Scoring Student:", highestStudent);
+
+
+        // 6 - Lowest Marks Student
+        
+        console.log("Lowest Total Marks:", lowestTotal);
+        console.log("Lowest Scoring Student:", lowestStudent);
+
+
+        // 7 - Overall Class Average
+        
+        let classAverage = totalClassMarks / (totalStudents * 5);
+
+        console.log("------------------------------------");
+
+        console.log("Overall Class Average:", classAverage);
+
+        // 8 - Grade Count
+
+        console.log("------------------------------------");
+        console.log("GRADE COUNT");
+
+        console.log("Grade A:", gradeA);
+        console.log("Grade B:", gradeB);
+        console.log("Grade C:", gradeC);
+        console.log("Grade F:", gradeF);
+
+        // 9 - Students Above Class Average
+        
+        console.log("------------------------------------");
+        console.log("Students Above Class Average:");
+
+        for (let i = 0; i < names.length; i++) {
+
+            let total = 0;
+
+            for (let j = 0; j < marks[i].length; j++) {
+
+                total = total + marks[i][j];
+            }
+
+            let average = total / marks[i].length;
+
+            if (average > classAverage) {
+
+                console.log(names[i]);
+            }
+        }
+       
+        // 10 - SEARCH STUDENT BY NAME
+        
+        console.log("------------------------------------");
+
+        let searchName = "Sharmin";
+
+        let found = false;
+
+        let i = 0;
+
+
+        // while loop
+        while (i < names.length) {
+
+            // String method
+            if (names[i].toLowerCase() === searchName.toLowerCase()) {
+
+                let total = 0;
+                let passed = true;
+
+
+                // Calculate total and check pass
+                for (let j = 0; j < marks[i].length; j++) {
+
+                    total = total + marks[i][j];
+
+                    if (marks[i][j] < 40) {
+
+                        passed = false;
+                    }
+                }
+
+
+                let average = total / marks[i].length;
+
+                let grade = "";
+
+
+                // Calculate grade
+                if (average >= 90) {
+                    grade = "A";
+                }
+                else if (average >= 75) {
+                    grade = "B";
+                }
+                else if (average >= 60) {
+                    grade = "C";
+                }
+                else if (average >= 40) {
+                    grade = "D";
+                }
+                else {
+                    grade = "F";
+                }
+
+                let result = "";
+
+                if (passed === true) {
+                    result = "Pass";
+                }
+                else {
+                    result = "Fail";
+                }
+
+
+                // Complete Result
+                console.log("===== SEARCH RESULT =====");
+
+                console.log("Name:", names[i]);
+
+                // String property
+                console.log("Name Length:", names[i].length);
+
+                console.log("English:", marks[i][0]);
+                console.log("Math:", marks[i][1]);
+                console.log("Computer:", marks[i][2]);
+                console.log("Urdu:", marks[i][3]);
+                console.log("Science:", marks[i][4]);
+
+                console.log("Total Marks:", total);
+                console.log("Average Marks:", average);
+                console.log("Grade:", grade);
+                console.log("Result:", result);
+
+                found = true;
+
+                break;
+            }
+
+            i = i + 1;
+        }
+        // If Student Not Found
+        
+        if (found === false) {
+
+            console.log("Student Not Found");
+        }
+    </script>
+
+</body>
+
+</html>
