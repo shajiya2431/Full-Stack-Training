@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-Website</title>
+
+    <meta name="description" content="FIND CLOTHES THAT MATCHES YOUR STYLE">
+    <meta name="keywords"
+        content="Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.">
+
+    <link rel="shortcut icon" href="./assets/icons/favicon.icon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+        Sign up and get 20% off to your first order.
+        <a href="#">Sign Up Now</a>
+
+        <img src="assets/icons/crose-icon.svg" class="close-btn" onclick="closeBar()" alt="close">
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+
+                <a href="#" class="logo">SHOP.CO</a>
+
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">
+                            shop
+                            <img src="assets/icons/Vector.svg" alt="arrow">
+                        </a>
+                    </li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+
+                <div class="search-box">
+                    <img src="assets/icons/Search-Vector.svg" alt="Search">
+                    <span>Search for products...</span>
+                </div>
+
+                <!-- Icons -->
+                <div class="icons">
+                    <img src="assets/icons/add-to-cart.svg" alt="Cart">
+                    <img src="assets/icons/user.svg" alt="User">
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-wrapper">
+
+                <div class="hero-content">
+
+                    <h1 class="hero-title">
+                        FIND CLOTHES
+                        THAT MATCHES
+                        YOUR STYLE
+                    </h1>
+
+                    <p class="hero-text">
+                        Browse through our diverse range of meticulously
+                        crafted garments, designed to bring out your
+                        individuality and cater to your sense of style.
+                    </p>
+
+                    <a href="#" class="hero-btn">
+                        Shop Now
+                    </a>
+
+                    <div class="stats">
+
+                        <div>
+                            <h3>200+</h3>
+                            <p>International Brands</p>
+                        </div>
+
+                        <div>
+                            <h3>2,000+</h3>
+                            <p>High-Quality Products</p>
+                        </div>
+
+                        <div>
+                            <h3>30,000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+                    <img class="model" src="assets/images/Hero-image.jpg" alt="Hero Image">
+                </div>
+
+                <img class="star-big" src="assets/icons/black-star-icon.svg" alt="star">
+
+                <img class="star-small" src="assets/icons/black-star.svg" alt="star">
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <section class="brands">
+
+        <div class="brand-wrapper">
+            <img src="assets/images/Versace.png" alt="Versace">
+            <img src="assets/images/zara-logo.png" alt="Zara">
+            <img src="assets/images/gucci-logo.png" alt="Gucci">
+            <img src="assets/images/prada-logo.png" alt="Prada">
+            <img src="assets/images/Calvin.png" alt="Calvin Klein">
+        </div>
+
+    </section>
+
+    <!-- NEW ARRIVALS -->
+
+    <section class="products-section">
+
+        <div class="container">
+
+            <h2 class="section-title">NEW ARRIVALS</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/ti-shirt.png" alt="T-Shirt">
+                    </div>
+
+                    <h4>T-shirt with Tape Details</h4>
+                    <div class="rating">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-half-icon.svg" alt="star">
+                        <span>4.5/5</span>
+                    </div>
+
+
+                    <div class="price">$120</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/SKINNY-FIT-JEANS.png" alt="Jeans">
+                    </div>
+
+                    <h4>Skinny Fit Jeans</h4>
+
+                    <div class="rating">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-half-icon.svg" alt="half star">
+                        <span>3.5/5</span>
+                    </div>
+
+                    <div class="price">
+                        $240 <del>$260</del>
+                        <span class="discount">-20%</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/CHECKERED-SHIRT.png" alt="Shirt">
+                    </div>
+
+                    <h4>Checkered Shirt</h4>
+
+                    <div class="rating">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-half-icon.svg" alt="star">
+                        <span>4.5/5</span>
+                    </div>
+
+                    <div class="price">$180</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/SLEEVE-STRIPED-T-SHIRT.png" alt="Sleeve ">
+                    </div>
+
+                    <h4>Sleeve Striped T-shirt</h4>
+
+                    <div class="rating">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-half-icon.svg" alt="star">
+
+                        <span>4.5/5</span>
+                    </div>
+
+                    <div class="price">
+                        $130 <del>$160</del>
+                        <span class="discount">-30%</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-btn-wrap">
+                <a href="#" class="view-btn">View All</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TOP SELLING -->
+
+    <section class="products-section top-selling">
+
+        <div class="container">
+
+            <h2 class="section-title">TOP SELLING</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/Vertical-Strlped-Shirt.png" alt="vertical-shirt">
+                    </div>
+
+                    <h4>Vertical Striped Shirt</h4>
+
+                    <div class="rating">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+
+                        <span>5.0/5</span>
+                    </div>
+
+                    <div class="price">
+                        $212 <del>$232</del>
+                        <span class="discount">-20%</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/Courage-Graphic-T-shirt.png" alt="Courage-t-shirt">
+                    </div>
+
+                    <h4>Courage Graphic T-shirt</h4>
+
+                    <div class="rating">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <span>4.5/5</span>
+                    </div>
+
+                    <div class="price">$145</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/Loose-fit-bermuda-shorts.png" alt="Loose-fit">
+                    </div>
+
+                    <h4>Loose Fit Bermuda Shorts</h4>
+
+                    <div class="rating">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <span>3.0/5</span>
+                    </div>
+
+
+                    <div class="price">$80</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/Faded-Skinny-jeans.png" alt="Faded-skinny-jeans">
+                    </div>
+
+                    <h4>Faded Skinny Jeans</h4>
+
+                    <div class="rating">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-icon.svg" alt="star">
+                        <img src="assets/icons/Rating-half-icon.svg" alt="star">
+                        <span>4.5/5</span>
+                    </div>
+
+                    <div class="price">$210</div>
+                </div>
+
+            </div>
+
+            <div class="view-btn-wrap">
+                <a href="#" class="view-btn">View All</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="dress-style">
+        <div class="container">
+
+            <h2 class="section-title">
+                BROWSE BY DRESS STYLE
+            </h2>
+
+            <div class="style-row">
+
+                <a href="#" class="style-card small-card">
+                    <span class="style-name">Casual</span>
+                    <img src="assets/images/casual.png" alt="Casual">
+                </a>
+
+                <a href="#" class="style-card large-card">
+                    <span class="style-name">Formal</span>
+                    <img src="assets/images/formal.png" alt="Formal">
+                </a>
+
+            </div>
+
+            <div class="style-row">
+
+                <a href="#" class="style-card large-card">
+                    <span class="style-name">Party</span>
+                    <img src="assets/images/party.png" alt="Party">
+                </a>
+
+                <a href="#" class="style-card small-card">
+                    <span class="style-name">Gym</span>
+                    <img src="assets/images/gym.png" alt="Gym">
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="customers">
+        <div class="container">
+
+            <div class="customers-header">
+                <h2>OUR HAPPY CUSTOMERS</h2>
+
+                <div class="slider-buttons">
+                    <button class="custom-prev">
+                        <img src="assets/icons/left-arrow.svg" alt="left arrow">
+                    </button>
+
+                    <button class="custom-next">
+                        <img src="assets/icons/right-arrow.svg" alt="right-arrow">
+                    </button>
+                </div>
+            </div>
+
+            <div class="swiper customerSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            Sarah M.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            "I'm blown away by the quality and style of the
+                            clothes I received from Shop.co. From casual
+                            wear to elegant dresses, every piece I've bought
+                            has exceeded my expectations."
+                        </p>
+
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            Alex K.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            "Finding clothes that align with my personal
+                            style used to be a challenge until I discovered
+                            Shop.co. The range of options they offer is truly
+                            remarkable, catering to a variety of tastes and
+                            occasions.”
+                        </p>
+
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            James L.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            As someone who's always on the lookout for
+                            unique fashion pieces, I'm thrilled to have
+                            stumbled upon Shop.co. The selection of
+                            clothes is not only diverse but also on-point
+                            with the latest trends.
+                        </p>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            Sarah M.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            "I'm blown away by the quality and style of the
+                            clothes I received from Shop.co. From casual
+                            wear to elegant dresses, every piece I've bought
+                            has exceeded my expectations."
+                        </p>
+
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            Alex K.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            "Finding clothes that align with my personal
+                            style used to be a challenge until I discovered
+                            Shop.co. The range of options they offer is truly
+                            remarkable, catering to a variety of tastes and
+                            occasions.”
+                        </p>
+
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            James L.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            As someone who's always on the lookout for
+                            unique fashion pieces, I'm thrilled to have
+                            stumbled upon Shop.co. The selection of
+                            clothes is not only diverse but also on-point
+                            with the latest trends.
+                        </p>
+
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            Sarah M.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            "I'm blown away by the quality and style of the
+                            clothes I received from Shop.co. From casual
+                            wear to elegant dresses, every piece I've bought
+                            has exceeded my expectations."
+                        </p>
+
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            Alex K.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            "Finding clothes that align with my personal
+                            style used to be a challenge until I discovered
+                            Shop.co. The range of options they offer is truly
+                            remarkable, catering to a variety of tastes and
+                            occasions.”
+                        </p>
+
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="swiper-slide review-card">
+
+                        <div class="stars">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                            <img src="assets/icons/Rating-icon.svg" alt="rating">
+                        </div>
+
+                        <div class="customer-name">
+                            James L.
+                            <img src="assets/icons/Vector-icon.svg" alt="green-tick">
+                        </div>
+
+                        <p>
+                            As someone who's always on the lookout for
+                            unique fashion pieces, I'm thrilled to have
+                            stumbled upon Shop.co. The selection of
+                            clothes is not only diverse but also on-point
+                            with the latest trends.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Newsletter Banner -->
+            <div class="newsletter-banner">
+                <h2>STAY UPTO DATE ABOUT<br>OUR LATEST OFFERS</h2>
+                <form class="newsletter-form">
+                    <div class="input-box">
+                        <img src="assets/icons/Email-icon.png" alt="mail" class="mail-icon">
+                        <input type="email" placeholder="Enter your email address" required>
+                    </div>
+                    <button type="submit">Subscribe to Newsletter</button>
+                </form>
+            </div>
+
+            <!-- Main Footer -->
+            <div class="footer-main">
+                <div class="footer-col footer-brand">
+                    <h3 class="logo">SHOP.CO</h3>
+                    <p>We have clothes that suits your style and which you're proud to wear. From women to men.</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="assets/icons/logo-twitter.svg"></a>
+
+                        <a href="#" class="active">
+                            <img src="assets/icons/logo-fb-simple.svg">
+                        </a>
+
+                        <a href="#"><img src="assets/icons/logo-instagram.svg"></a>
+                        <a href="#"><img src="assets/icons/logo-github.svg"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Works</a>
+                    <a href="#">Career</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>HELP</h4>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Delivery Details</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>FAQ</h4>
+                    <a href="#">Account</a>
+                    <a href="#">Manage Deliveries</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Payments</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>RESOURCES</h4>
+                    <a href="#">Free eBooks</a>
+                    <a href="#">Development Tutorial</a>
+                    <a href="#">How to - Blog</a>
+                    <a href="#">Youtube Playlist</a>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>Shopco © 2000-2023, All Rights Reserved</p>
+                <div class="payment-icons">
+                    <img src="assets/icons/Visa.svg" alt="Visa">
+                    <img src="assets/icons/Mastercard.svg" alt="Mastercard">
+                    <img src="assets/icons/Paypal.svg" alt="Paypal">
+                    <img src="assets/icons/ Pay.svg" alt="Apple Pay">
+                    <img src="assets/icons/G Pay.svg" alt="Google Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        new Swiper(".customerSwiper", {
+            slidesPerView: 3.2,
+            centeredSlides: true,
+            loop: true,
+            spaceBetween: 20,
+
+            navigation: {
+                nextEl: ".custom-next",
+                prevEl: ".custom-prev"
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.15
+                },
+                768: {
+                    slidesPerView: 2.2
+                },
+                1024: {
+                    slidesPerView: 3.2
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
