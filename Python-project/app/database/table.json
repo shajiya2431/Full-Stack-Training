@@ -1,0 +1,18 @@
+[
+    {
+        "table_no": 2,
+        "customer": "shajiya",
+        "persons": "4",
+        "phone": "234567865",
+        "start": "12:00",
+        "end": "13:00"
+    },
+    {
+        "table_no": 1,
+        "customer": "gudiya",
+        "persons": "2",
+        "phone": "9876543298",
+        "start": "02:00",
+        "end": "03:00"
+    }
+]
