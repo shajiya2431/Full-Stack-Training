@@ -1,0 +1,183 @@
+/* =========================
+   About Section
+========================= */
+
+.about-section {
+
+    padding: $space-80 0;
+    background: $body-bg;
+
+
+    .about-img {
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: $rounded-md;
+        }
+    }
+
+
+    .about-content {
+
+        max-width: 33rem;
+        margin-left: auto;
+    }
+
+
+
+    .badge {
+
+        display: inline-flex;
+        align-items: center;
+        gap: $space-8;
+
+        background: $primary-light;
+        color: $primary;
+
+        border-radius: $btn-radius;
+
+        padding: $space-12 $space-24;
+
+        font-size: $fs-14;
+        font-weight: $fw-medium;
+
+        margin-bottom: $space-24;
+    }
+
+
+
+    .about-title {
+
+        margin: $space-32 0 $space-48;
+
+        color: $heading;
+
+        font-size: $fs-heading-lg;
+
+        font-weight: $fw-medium;
+
+        line-height: 1.3;
+    }
+
+
+
+    .counter-number {
+
+        color: $primary;
+
+        font-size: $fs-heading-lg;
+
+        font-weight: $fw-semibold;
+
+        line-height: 1;
+
+        margin-bottom: $space-8;
+    }
+
+
+
+    .counter-text {
+
+        color: $text;
+
+        font-size: $fs-16;
+
+        line-height: $lh-lg;
+
+        max-width: 10rem;
+    }
+
+}
+
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width:991.98px) {
+
+
+    .about-section {
+
+        padding: $space-64 0;
+
+
+        .about-content {
+
+            max-width: 100%;
+            margin: $space-32 auto 0;
+            text-align: center;
+        }
+
+
+        .badge {
+
+            justify-content: center;
+        }
+
+
+        .about-title {
+
+            font-size: $fs-32;
+
+            margin: $space-24 0 $space-32;
+        }
+
+
+        .counter-number {
+
+            font-size: $fs-36;
+        }
+
+
+        .counter-text {
+
+            max-width: 100%;
+        }
+
+    }
+
+}
+
+
+
+@media (max-width:767.98px) {
+
+
+    .about-section {
+
+
+        padding: $space-48 0;
+
+
+        .about-title {
+
+            font-size: $fs-24;
+        }
+
+
+        .counter-number {
+
+            font-size: $fs-32;
+        }
+
+
+        .counter-text {
+
+            font-size: $fs-14;
+        }
+
+
+        .badge {
+
+            font-size: $fs-12;
+
+            padding: $space-8 $space-16;
+        }
+
+    }
+
+}

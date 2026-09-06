@@ -1,0 +1,259 @@
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:1024px){
+
+    html,
+    body{
+        overflow-x:hidden;
+    }
+
+    .hero{
+        min-height:auto;
+    }
+
+    .hero-wrapper{
+        grid-template-columns:1fr;
+        height:auto;
+        text-align:center;
+    }
+
+    .hero-content{
+        padding:60px 20px 30px;
+    }
+
+    .hero-text{
+        margin:0 auto 30px;
+    }
+
+    .hero-btn{
+        margin:auto;
+    }
+
+    .stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .hero-image{
+        height:auto;
+    }
+
+    .hero-image .model{
+        position:static;
+        width:100%;
+        max-width:550px;
+        height:auto;
+        margin:auto;
+        display:block;
+        bottom:auto;
+        right:auto;
+        transform:none;
+    }
+
+    .star-big,
+    .star-small{
+        display:none;
+    }
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .style-row{
+        flex-wrap:wrap;
+    }
+
+    .footer-main{
+        grid-template-columns:repeat(3,1fr);
+        gap:40px;
+    }
+
+    .newsletter-banner{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .nav-menu{
+        display:none;
+    }
+
+    .search-box{
+        width:100%;
+        max-width:100%;
+        order:3;
+    }
+
+    .hero-title{
+        font-size:36px;
+        line-height:40px;
+    }
+
+    .hero-text{
+        font-size:14px;
+        line-height:22px;
+    }
+
+    .hero-image .model{
+        max-width:420px;
+    }
+
+    .stats{
+        gap:15px;
+        justify-content:center;
+    }
+
+    .stats div{
+        border:none;
+        padding:0;
+        text-align:center;
+    }
+
+    .stats h3{
+        font-size:28px;
+    }
+
+    .brand-wrapper{
+        flex-wrap:wrap;
+        gap:20px;
+        justify-content:center;
+    }
+
+    .brand-wrapper img{
+        height:25px;
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .product-image{
+        height:240px;
+    }
+
+    .style-row{
+        flex-direction:column;
+    }
+
+    .small-card,
+    .large-card{
+        width:100%;
+    }
+
+    .style-name{
+        font-size:24px;
+    }
+
+    .dress-style .container{
+        padding:30px 20px;
+    }
+
+    .customers-header{
+        flex-direction:column;
+        gap:20px;
+        align-items:flex-start;
+    }
+
+    .customers-header h2{
+        font-size:30px;
+    }
+
+    .newsletter-banner{
+        padding:25px;
+    }
+
+    .newsletter-banner h2{
+        font-size:28px;
+    }
+
+    .newsletter-form{
+        width:100%;
+        min-width:100%;
+    }
+
+    .input-box,
+    .newsletter-form button{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .payment-icons{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:480px){
+
+    .top-bar{
+        font-size:12px;
+        padding:8px 35px 8px 10px;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .hero-title{
+        font-size:30px;
+        line-height:34px;
+    }
+
+    .hero-btn{
+        width:100%;
+    }
+
+    .stats{
+        flex-direction:column;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr;
+    }
+
+    .newsletter-banner h2{
+        font-size:22px;
+    }
+}
+
+/* Product title equal height */
+
+.product-card h4{
+    min-height:48px;
+}
+
+
+
+
+
+

@@ -1,0 +1,209 @@
+/*=========================
+Hero Section
+=========================*/
+
+.hero-section {
+  
+
+  
+  .hero-content {
+    max-width: 540px;
+  }
+
+  .rating-badge {
+    background: $primary-light;
+    color: $primary;
+    margin-bottom: $space-32;
+    font-size: $fs-14;
+    font-weight: $fw-medium;
+  }
+
+  .hero-title {
+    color: $heading;
+    font-size: $hero-title;
+    font-weight: $fw-bold;
+    line-height: $lh-sm;
+    margin-bottom: $space-24;
+  }
+
+  .highlight-to {
+    font-family: $font;
+    font-style: italic;
+    color: $primary;
+    font-weight: $fw-normal;
+  }
+
+  .hero-desc {
+    color: $text;
+    font-size: $fs-20;
+    line-height: $lh-lg;
+    margin-bottom: $space-40;
+    max-width: 500px;
+  }
+
+  
+  .btn-consultation {
+    background: $primary;
+    border: 1px solid $primary;
+    color: $white;
+    transition: $transition;
+
+    &:hover {
+      background: $primary-dark;
+      border-color: $primary-dark;
+      color: $white;
+    }
+  }
+
+  .btn-learn-more {
+    background: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+    transition: $transition;
+
+    span {
+      color: $primary;
+    }
+
+    .arrow-icon {
+      transition: $transition;
+    }
+
+    &:hover {
+      background: $primary-light;
+      border-color: $primary;
+
+      .arrow-icon {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  
+  .hero-image-wrapper {
+    position: relative;
+    max-width: 560px;
+    margin-left: auto;
+
+    .hero-main-img {
+      width: 100%;
+      border-radius: $doctor-radius;
+      display: block;
+    }
+
+    .stat-card {
+      background: $white;
+      border-radius: $card-radius;
+      padding: $space-16 $space-20;
+      box-shadow: $shadow;
+
+      .stat-num {
+        color: $primary;
+        font-size: $fs-32;
+        font-weight: $fw-bold;
+        line-height: 1;
+      }
+
+      .stat-label {
+        color: $text-light;
+        font-size: $fs-12;
+        font-weight: $fw-medium;
+        line-height: $lh-md;
+      }
+    }
+
+    
+    .stat-top {
+      top: -$space-16;
+      right: -$space-32;
+    }
+
+    .stat-bottom {
+      bottom: -$space-20;
+      left: -$space-20;
+    }
+
+    
+    .avatar-group {
+      .avatar {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1.5px solid $white;
+        margin-left: -8px;
+        object-fit: cover;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+/*=========================
+Responsive Adjustments
+=========================*/
+
+@media (max-width: #{$lg - .02px}) {
+  .hero-section {
+    padding: $space-32 0;
+
+    .hero-content {
+      max-width: 100%;
+    }
+
+    .hero-title {
+      font-size: $hero-title-mobile;
+    }
+
+    .hero-desc {
+      font-size: $fs-16;
+      line-height: $lh-md;
+    }
+
+    .hero-image-wrapper {
+      max-width: 88%;
+      margin: 0 auto;
+
+      .hero-main-img {
+        border-radius: $radius-xl;
+      }
+
+      .stat-top {
+        top: -12px;
+        right: -15px;
+        padding: $space-8 $space-12;
+
+        .stat-num {
+          font-size: $fs-18;
+        }
+
+        .stat-label {
+          font-size: 10px;
+          line-height: 1.2;
+        }
+      }
+
+      .stat-bottom {
+        bottom: -15px;
+        left: -15px;
+        padding: $space-12;
+
+        .stat-num {
+          font-size: $fs-18;
+        }
+
+        .stat-label {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .hero-buttons-mobile {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}

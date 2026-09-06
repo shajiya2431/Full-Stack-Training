@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedEase</title>
+
+    <meta name="description"
+        content="MedEase provides easy healthcare services including doctor appointments, telehealth, and patient care management.">
+
+    <meta name="keywords" content="healthcare, doctor appointment, online consultation, telehealth, medical services">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script type="module" src="./assets/js/main.js"></script>
+</head>
+
+<body>
+    <!-- ==========================
+ Header Start
+========================== -->
+    <header class="py-3">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand fw-semibold text-primary d-flex align-items-center gap-2" href="#">
+                    <img src="./assets/icons/stethoscope-icon.svg" alt="Logo" width="20" height="20">
+
+                    MedEase
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary fw-medium" href="#">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Find a Doctor
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                About Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Register Button -->
+                    <a href="#" class="btn btn-primary rounded-pill px-4 px-lg-5">
+                        Register
+                    </a>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section py-4 py-lg-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center gy-4 gy-lg-5">
+
+
+                <div class="col-lg-6 order-1">
+                    <div class="hero-content">
+
+                        <div
+                            class="rating-badge d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill mb-3 mb-md-4">
+                            <img src="./assets/icons/blue-star.svg" alt="Star" width="16" height="16">
+                            <span class="rating-text">
+                                Rated #1 choice for healthcare appointments by users
+                            </span>
+                        </div>
+
+
+                        <h1 class="hero-title mb-3 mb-md-4">
+                            Connecting You
+                            <span class="highlight-to">to</span>
+                            Better Health
+                        </h1>
+
+
+                        <p class="hero-desc mb-4 mb-lg-5">
+                            We're here to link you directly to improved health outcomes, effortlessly connecting you
+                            with the care
+                            you need.
+                        </p>
+
+
+                        <div class="hero-buttons d-none d-lg-flex align-items-center gap-3">
+                            <a href="#" class="btn btn-consultation rounded-pill px-4 py-3">Book Consultation</a>
+                            <a href="#"
+                                class="btn btn-learn-more rounded-pill px-4 py-3 d-inline-flex align-items-center gap-2">
+                                <span>Learn More</span>
+                                <img src="./assets/icons/Vector-blue.svg" alt="arrow" width="16" height="16"
+                                    class="arrow-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 order-2">
+                    <div class="hero-image-wrapper position-relative mx-auto ms-lg-auto">
+                        <img src="./assets/images/girl-image.png" alt="Doctor" class="hero-main-img img-fluid w-100">
+
+
+                        <div
+                            class="stat-card stat-top position-absolute rounded-3 rounded-md-4 shadow-sm d-flex align-items-center gap-2 gap-md-3">
+                            <h3 class="stat-num mb-0">10K+</h3>
+                            <p class="stat-label mb-0">Hours Of Patient<br class="d-none d-md-block"> Meetings</p>
+                        </div>
+
+
+                        <div class="stat-card stat-bottom position-absolute rounded-3 rounded-md-4 shadow-sm">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+
+                                <div class="avatar-group d-flex align-items-center">
+                                    <img src="./assets/icons/Ellipse-14.svg" class="avatar" alt="user">
+                                    <img src="./assets/icons/Ellipse-15.svg" class="avatar" alt="user">
+                                    <img src="./assets/icons/Ellipse-16.svg" class="avatar" alt="user">
+                                    <img src="./assets/icons/Ellipse-17.svg" class="avatar" alt="user">
+                                </div>
+                                <h3 class="stat-num mb-0">2,650+</h3>
+                            </div>
+                            <p class="stat-label mb-0">patients have trusted us</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 order-3 d-lg-none mt-4">
+                    <div class="hero-buttons-mobile d-flex flex-column gap-3">
+                        <a href="#" class="btn btn-consultation rounded-pill py-3 text-center fw-semibold">Book
+                            Consultation</a>
+                        <a href="#"
+                            class="btn btn-learn-more rounded-pill py-3 d-flex align-items-center justify-content-center gap-2 fw-semibold">
+                            <span>Learn More</span>
+                            <img src="./assets/icons/Vector-blue.svg" alt="arrow" width="16" height="16"
+                                class="arrow-icon">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose Doctor Section -->
+    <section class="doctor-expertise py-lg-5 py-4">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="d-flex justify-content-between align-items-center mb-lg-4 mb-3">
+                <h2 class="fw-semibold mb-0">
+                    Choose Doctor's
+                    <span class="expertise-text">Expertise</span>
+                </h2>
+
+                <a href="#" class="text-decoration-none see-all d-none d-md-block">
+                    See All
+                </a>
+            </div>
+
+            <!-- Slider -->
+            <div class="swiper expertiseSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+
+                        <div class="doctor-card h-100">
+
+                            <img src="./assets/icons/heart.svg" alt="Heart">
+
+                            <h4 class="mt-4 mb-3">
+                                Cardiologist
+                            </h4>
+
+                            <p>
+                                Heart specialist focusing on cardiovascular
+                                health and diseases.
+                            </p>
+
+                            <a href="#">
+                                Book Consultation
+
+                                <img src="./assets/icons/Vector-blue.svg" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+
+                        <div class="doctor-card h-100">
+
+                            <img src="./assets/icons/flower.svg" alt="">
+
+                            <h4 class="mt-4 mb-3">
+                                Neurologist
+                            </h4>
+
+                            <p>
+                                Doctor specializing in diagnosing and treating
+                                nervous system disorders.
+                            </p>
+
+                            <a href="#">
+                                Book Consultation
+
+                                <img src="./assets/icons/Vector-blue.svg" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+
+                        <div class="doctor-card h-100">
+
+                            <img src="./assets/icons/blue-vactor.svg" alt="">
+
+                            <h4 class="mt-4 mb-3">
+                                ENT Specialist
+                            </h4>
+
+                            <p>
+                                Doctor specializing in ear, nose and throat
+                                disorders and surgeries.
+                            </p>
+
+                            <a href="#">
+                                Book Consultation
+
+                                <img src="./assets/icons/Vector-blue.svg" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+
+                        <div class="doctor-card h-100">
+
+                            <img src="./assets/icons/heart.svg" alt="">
+
+                            <h4 class="mt-4 mb-3">
+                                Family Doctor
+                            </h4>
+
+                            <p>
+                                Specialist in routine checkups and complete
+                                family healthcare.
+                            </p>
+
+                            <a href="#">
+                                Book Consultation
+
+                                <img src="./assets/icons/Vector-blue.svg" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide">
+
+                        <div class="doctor-card h-100">
+
+                            <img src="./assets/icons/flower.svg" alt="">
+
+                            <h4 class="mt-4 mb-3">
+                                Dentist
+                            </h4>
+
+                            <p>
+                                Dental care, oral health treatment and cosmetic
+                                dentistry.
+                            </p>
+
+                            <a href="#">
+                                Book Consultation
+
+                                <img src="./assets/icons/Vector-blue.svg" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Controls -->
+            <div class="d-flex justify-content-between align-items-center mt-lg-4">
+
+                <!-- Left Arrow -->
+                <div class="swiper-button-prev-custom">
+                    <img src="./assets/icons/left-arrow-icon.svg" alt="">
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination position-static"></div>
+
+                <!-- Right Arrow -->
+                <div class="swiper-button-next-custom">
+                    <img src="./assets/icons/right-blue-arrow.svg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Mobile Button -->
+            <div class="text-center mt-4 d-block d-md-none">
+
+                <a href="#" class="btn see-more-btn rounded-pill">
+                    See More
+
+                    <img src="./assets/images/right-arrow-blue.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================
+About / Statistics Section
+========================= -->
+
+    <section class="about-section py-5">
+        <div class="container">
+
+            <div class="row g-5 align-items-start ">
+
+                <!-- Left Image -->
+                <div class="col-lg-6">
+
+                    <div class="about-img">
+
+                        <img src="./assets/images/docter.png" alt="Doctors" class="img-fluid rounded-4 w-100">
+
+                    </div>
+
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-6">
+
+                    <!-- Badge -->
+                    <span class="badge rounded-pill px-4 py-3 d-inline-flex align-items-center gap-2">
+
+                        <img src="./assets/icons/blue-star.svg" alt="Star" width="16">
+
+                        Rated #1 for appointments with many professional doctors
+
+                    </span>
+
+                    <!-- Heading -->
+                    <h2 class="display-6 fw-medium lh-sm mt-4 mb-4">
+
+                        We're revolutionizing healthcare with seamless access to trusted professionals, prioritizing
+                        your journey to better health.
+
+                    </h2>
+
+                    <!-- Counter -->
+                    <div class="row mt-5">
+
+                        <div class="col-6">
+                            <h3 class="counter-number">40+</h3>
+                            <p class="counter-text">
+                                Dedicated Doctors
+                            </p>
+                        </div>
+
+                        <div class="col-6">
+                            <h3 class="counter-number">10K+</h3>
+                            <p class="counter-text">
+                                Hours of Patient Consultations
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <!-- Item -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="features-section py-5">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-semibold">
+                    Explore Our App's
+                    <span class="text-primary fst-italic">Features</span>
+                </h2>
+            </div>
+
+            <div class="row g-3">
+
+                <!-- Left Side -->
+                <div class="col-lg-7">
+                    <div class="row g-3">
+
+                        <!-- Card 1 -->
+                        <div class="col-md-6">
+                            <div class="feature-card h-100 p-4">
+
+                                <img src="assets/icons/CalendarHeart.svg" class="feature-icon mb-3" alt="">
+
+                                <h5 class="fw-semibold mb-2">
+                                    Convenient Online Booking
+                                </h5>
+
+                                <p class="text-secondary small mb-0">
+                                    Easily schedule consultations and meetings
+                                    with healthcare professionals through our
+                                    user-friendly online booking platform.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col-md-6">
+                            <div class="phone-box h-100 d-flex justify-content-center align-items-end">
+
+                                <img src="assets/images/Mobile.png" class="img-fluid phone-img" alt="">
+
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-6">
+                            <div class="feature-card h-100 p-4">
+
+                                <img src="assets/icons/Files.svg" class="feature-icon mb-3" alt="">
+
+                                <h5 class="fw-semibold mb-2">
+                                    Records Management
+                                </h5>
+
+                                <p class="text-secondary small mb-0">
+                                    Effortlessly store and access patient medical
+                                    records, ensuring vital information is available
+                                    for healthcare providers during appointments.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-6">
+                            <div class="feature-card h-100 p-4">
+
+                                <img src="assets/icons/ShieldCheck.svg" class="feature-icon mb-3" alt="">
+
+                                <h5 class="fw-semibold mb-2">
+                                    Instant Confirmation
+                                </h5>
+
+                                <p class="text-secondary small mb-0">
+                                    Receive instant confirmation of your booked
+                                    appointments, along with timely reminders to
+                                    ensure you never miss a meeting.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-5">
+
+                    <div class="feature-card h-100 p-4 d-flex flex-column">
+
+                        <img src="assets/icons/VideoConference.svg" class="feature-icon mb-3" alt="">
+
+                        <h5 class="fw-semibold mb-2">
+                            Secure Virtual Meetings
+                        </h5>
+
+                        <p class="text-secondary small">
+                            Experience secure and convenient virtual consultations
+                            from home. Our encrypted video conferencing guarantees
+                            confidential interactions, removing the need for
+                            in-person visits.
+                        </p>
+
+                        <div class="text-center mt-auto">
+
+                            <img src="assets/images/iPhone.png" class="img-fluid phone-img2" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="testimonial-section py-5">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-5">
+                <h2 class="testimonial-title">
+                    Testimonials From Our
+                    <span>Satisfied</span>
+                    Patients
+                </h2>
+            </div>
+
+            <div class="swiper testimonialSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card d-flex align-items-stretch">
+
+                            <div class="testimonial-image">
+                                <img src="./assets/images/boy-images.png" alt="">
+                            </div>
+
+                            <div class="testimonial-content">
+                                <p>
+                                    "I've been using this site for a few months,
+                                    and it's incredibly reliable. I appreciate the
+                                    convenience of booking and canceling
+                                    appointments anytime, anywhere"
+                                </p>
+
+                                <h6>David Panjaitan</h6>
+                                <small>Software Engineer</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card d-flex align-items-stretch">
+
+                            <div class="testimonial-image">
+                                <img src="./assets/images/girl-images-blue.png" alt="">
+                            </div>
+
+                            <div class="testimonial-content">
+                                <p>
+                                    "Managing appointments has never been easier.
+                                    The booking process is simple and reminders
+                                    always keep me on schedule."
+                                </p>
+
+                                <h6>Ester Howard</h6>
+                                <small>Project Manager</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card d-flex align-items-stretch">
+
+                            <div class="testimonial-image">
+                                <img src="./assets/images/girl-images-blue.png" alt="">
+                            </div>
+
+                            <div class="testimonial-content">
+                                <p>
+                                    "Excellent healthcare service. Everything is
+                                    fast, smooth and easy to use."
+                                </p>
+
+                                <h6>Jenny Wilson</h6>
+                                <small>UI Designer</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card d-flex align-items-stretch">
+
+                            <div class="testimonial-image">
+                                <img src="./assets/images/boy-images.png" alt="">
+                            </div>
+
+                            <div class="testimonial-content">
+                                <p>
+                                    "The platform makes my healthcare journey
+                                    simple and stress free. Highly recommended."
+                                </p>
+
+                                <h6>Sarah Smith</h6>
+                                <small>Marketing Manager</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card d-flex align-items-stretch">
+
+                            <div class="testimonial-image">
+                                <img src="./assets/images/girl-images-blue.png" alt="">
+                            </div>
+
+                            <div class="testimonial-content">
+                                <p>
+                                    "Booking appointments online saves a lot of
+                                    time. The experience is very smooth."
+                                </p>
+
+                                <h6>Michael Brown</h6>
+                                <small>Product Designer</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Card 6 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card d-flex align-items-stretch">
+
+                            <div class="testimonial-image">
+                                <img src="./assets/images/boy-images.png" alt="">
+                            </div>
+
+                            <div class="testimonial-content">
+                                <p>
+                                    "Great service and easy appointment management.
+                                    I can access everything whenever I need."
+                                </p>
+
+                                <h6>Jessica Lee</h6>
+                                <small>Doctor Assistant</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Bottom Controls -->
+                <div class="d-flex justify-content-between align-items-center mt-lg-4">
+
+                    <!-- Left Arrow -->
+                    <div class="swiper-button-prev-custom">
+                        <img src="./assets/icons/left-arrow-icon.svg" alt="">
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination position-static"></div>
+
+                    <!-- Right Arrow -->
+                    <div class="swiper-button-next-custom">
+                        <img src="./assets/icons/right-blue-arrow.svg" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Mobile Button -->
+                <div class="text-center mt-4 d-block d-md-none">
+
+                    <a href="#" class="btn see-more-btn rounded-pill">
+                        See More
+
+                        <img src="./assets/images/right-arrow-blue.png" alt="">
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="health-blog py-5">
+
+        <div class="container">
+
+            <!--=========================
+            Heading
+        ==========================-->
+
+            <div class="d-flex justify-content-between align-items-center mb-5">
+
+                <h2 class="fw-semibold mb-0 display-6">
+
+                    Expert
+                    <span class="text-primary fst-italic">
+                        Health
+                    </span>
+                    Advice and Updates
+
+                </h2>
+
+                <a href="#" class="text-decoration-none fw-medium">
+                    See All
+                </a>
+
+            </div>
+
+            <!--=========================
+            Swiper
+        ==========================-->
+
+            <div class="swiper healthSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!--=========================
+                    Card 1
+                ==========================-->
+
+                    <div class="swiper-slide">
+
+                        <div class="card border-0 h-100">
+
+                            <img src="assets/images/food-image.png" class="card-img-top rounded-4" alt="Blog Image">
+
+                            <div class="card-body px-0">
+
+                                <div class="d-flex align-items-center gap-2 small mb-3">
+
+                                    <span class="text-primary">
+                                        Diet Tips
+                                    </span>
+
+                                    <span class="text-secondary">
+                                        28 April 2024
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-semibold mb-3">
+
+                                    Diet Tips for a Healthier Lifestyle
+
+                                </h5>
+
+                                <p class="text-secondary mb-4">
+
+                                    Maintaining a healthy diet is crucial for overall well-being and can prevent
+                                    numerous health issues.
+
+                                </p>
+
+                                <a href="#" class="read-more d-inline-flex align-items-center text-decoration-none">
+
+                                    <span>
+                                        Read More
+                                    </span>
+
+                                    <img src="assets/icons/Vector-blue.svg" class="ms-2" alt="Arrow">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--=========================
+                    Card 2
+                ==========================-->
+
+                    <div class="swiper-slide">
+
+                        <div class="card border-0 h-100">
+
+                            <img src="assets/images/blog-two.png" class="card-img-top rounded-4" alt="Blog Image">
+
+                            <div class="card-body px-0">
+
+                                <div class="d-flex align-items-center gap-2 small mb-3">
+
+                                    <span class="text-primary">
+                                        Health Tips
+                                    </span>
+
+                                    <span class="text-secondary">
+                                        21 April 2024
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-semibold mb-3">
+
+                                    The Importance of Regular Healt...
+
+                                </h5>
+
+                                <p class="text-secondary mb-4">
+
+                                    Regular health screenings are essential for early detection and prevention of
+                                    various health..
+
+                                </p>
+
+                                <a href="#" class="read-more d-inline-flex align-items-center text-decoration-none">
+
+                                    <span>
+                                        Read More
+                                    </span>
+
+                                    <img src="assets/icons/Vector-blue.svg" class="ms-2" alt="Arrow">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--=========================
+                    Card 3
+                ==========================-->
+
+                    <div class="swiper-slide">
+
+                        <div class="card border-0 h-100">
+
+                            <img src="assets/images/blog-three.png" class="card-img-top rounded-4" alt="Blog Image">
+
+                            <div class="card-body px-0">
+
+                                <div class="d-flex align-items-center gap-2 small mb-3">
+
+                                    <span class="text-primary">
+                                        Health Tips
+                                    </span>
+
+                                    <span class="text-secondary">
+                                        14 April 2024
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-semibold mb-3">
+
+                                    Boosting Your Immune System Natu..
+
+                                </h5>
+
+                                <p class="text-secondary mb-4">
+
+                                    A strong immune system is vital for fighting off infections and staying healthy.
+
+                                </p>
+
+                                <a href="#" class="read-more d-inline-flex align-items-center text-decoration-none">
+
+                                    <span>
+                                        Read More
+                                    </span>
+
+                                    <img src="assets/icons/Vector-blue.svg" class="ms-2" alt="Arrow">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--=========================
+                    Card 4
+                ==========================-->
+
+                    <div class="swiper-slide">
+
+                        <div class="card border-0 h-100">
+
+                            <img src="assets/images/blog-four.jpg" class="card-img-top rounded-4" alt="Blog Image">
+
+                            <div class="card-body px-0">
+
+                                <div class="d-flex align-items-center gap-2 small mb-3">
+
+                                    <span class="text-primary">
+                                        Health Tips
+                                    </span>
+
+                                    <span class="text-secondary">
+                                        10 April 2024
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-semibold mb-3">
+
+                                    Tips for Better Sleep Every Night
+
+                                </h5>
+
+                                <p class="text-secondary mb-4">
+
+                                    Learn healthy habits that can improve your sleep quality and overall wellness.
+
+                                </p>
+
+                                <a href="#" class="read-more d-inline-flex align-items-center text-decoration-none">
+
+                                    <span>
+                                        Read More
+                                    </span>
+
+                                    <img src="assets/icons/Vector-blue.svg" class="ms-2" alt="Arrow">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--=========================
+            Slider Controls
+        ==========================-->
+
+            <div class="d-flex justify-content-between align-items-center mt-5">
+
+                <div class="swiper-button-prev healthPrev">
+
+                    <img src="assets/icons/left-arrow-icon.svg" alt="Previous">
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination healthPagination"></div>
+
+                <!-- Right Arrow -->
+                <div class="swiper-button-next healthNext">
+
+                    <img src="assets/icons/right-blue-arrow.svg" alt="Next">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="hero position-relative overflow-hidden">
+
+        <!-- Background Image -->
+        <img src="./assets/images/Mask-group.png" alt="Hero Image" class="w-100 hero-img">
+
+        <!-- Overlay Content -->
+        <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
+
+            <div class="container">
+
+                <h1 class="display-3 fw-semibold text-white mb-4">
+                    Start Your Health <br>
+                    Journey Here
+                </h1>
+
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+                    <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                        Book Consultation Now
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 d-flex align-items-center">
+                        Learn More
+
+                        <img src="./assets/icons/right-icon.svg" alt="Arrow" class="ms-2 arrow-icon">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer py-5">
+
+        <div class="container">
+
+            <div class="row gy-5 ">
+
+                <!-- Logo -->
+
+                <div class="col-lg-4 col-md-12">
+
+                    <a href="#" class="d-inline-flex align-items-center text-decoration-none mb-3">
+
+                        <img src="./assets/icons/stethoscope-icon.svg" alt="Logo" class="logo-img me-2">
+
+                        <h5 class="mb-0 text-primary fw-semibold">
+                            MedEase
+                        </h5>
+
+                    </a>
+
+                    <p class="footer-text mb-4">
+                        MedEase simplifies healthcare with an easy-to-use platform for
+                        booking appointments, telehealth services, and managing patient
+                        records.
+                    </p>
+
+                    <div class="d-flex gap-3">
+
+                        <a href="#" class="social-icon">
+                            <img src="./assets/icons/facebook-icon.svg" alt="">
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <img src="./assets/icons/insta-icon.svg" alt="">
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <img src="./assets/icons/twitter-icon.svg" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Services -->
+
+                <div class="col-lg-2 col-md-4 col-6">
+
+                    <h5 class="footer-title mb-4">
+                        Services
+                    </h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3"><a href="#" class="footer-link">Primary Care</a></li>
+
+                        <li class="mb-3"><a href="#" class="footer-link">Specialist Care</a></li>
+
+                        <li class="mb-3"><a href="#" class="footer-link">Mental Health Services</a></li>
+
+                        <li><a href="#" class="footer-link">Telehealth</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Find Doctor -->
+
+                <div class="col-lg-3 col-md-4 col-6">
+
+                    <h5 class="footer-title mb-4">
+                        Find a Doctor
+                    </h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3"><a href="#" class="footer-link">Top-Rated Doctors</a></li>
+
+                        <li class="mb-3"><a href="#" class="footer-link">Appointment Scheduling</a></li>
+
+                        <li class="mb-3"><a href="#" class="footer-link">Patient Reviews</a></li>
+
+                        <li><a href="#" class="footer-link">Doctor Profiles</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- About -->
+
+                <div class="col-lg-3 col-md-4 col-6">
+
+                    <h5 class="footer-title mb-4">
+                        About Us
+                    </h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3"><a href="#" class="footer-link">News and Updates</a></li>
+
+                        <li class="mb-3"><a href="#" class="footer-link">Careers</a></li>
+
+                        <li class="mb-3"><a href="#" class="footer-link">Community Involvement</a></li>
+
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

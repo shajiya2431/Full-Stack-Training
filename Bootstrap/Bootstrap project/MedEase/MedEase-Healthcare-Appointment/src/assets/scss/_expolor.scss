@@ -1,0 +1,230 @@
+.features-section {
+
+    background: $body-bg;
+
+    h2 {
+
+        font-size: $fs-48;
+        color: $heading;
+        font-weight: $fw-medium;
+
+
+        span {
+
+            color: $primary;
+            font-family: $font-family-heading;
+            font-style: italic;
+        }
+    }
+
+}
+
+
+
+/* Feature Card */
+
+.feature-card {
+
+    background: #F8F9FC;
+
+    border-radius: $radius-md;
+
+    transition: $transition;
+
+    height: 100%;
+
+
+
+    &:hover {
+
+        transform: translateY(-5px);
+
+        box-shadow: $shadow;
+    }
+
+
+
+    h5 {
+
+        font-size: $fs-24;
+
+        margin-bottom: $space-12;
+
+        color: $heading;
+    }
+
+
+
+    p {
+
+        font-size: $fs-15;
+
+        line-height: $lh-lg;
+
+        color: $text;
+    }
+
+}
+
+
+
+/* Icon */
+
+.feature-icon {
+
+    width: $fs-32;
+
+    height: $fs-32;
+}
+
+
+
+/* Phone Box */
+
+.phone-box {
+
+    background: #F8F9FC;
+
+    border-radius: $radius-md;
+
+    overflow: hidden;
+
+    min-height: 420px;
+}
+
+
+
+.phone-img {
+    max-height: 390px;
+
+    object-fit: contain;
+}
+
+
+
+.phone-img2 {
+    max-height: 320px;
+
+    object-fit: contain;
+}
+
+
+
+/* Responsive */
+
+@media (max-width:991.98px) {
+
+    .features-section {
+
+
+        h2 {
+
+            font-size: $fs-36;
+        }
+
+    }
+
+    .phone-box {
+
+        min-height: 320px;
+    }
+
+    .phone-img {
+
+        max-height: 300px;
+    }
+
+    .phone-img2 {
+
+        max-height: 280px;
+    }
+
+}
+
+@media (max-width:767.98px) {
+
+
+    .features-section {
+
+
+        h2 {
+
+            font-size: $fs-32;
+        }
+
+    }
+
+    .feature-card {
+
+        text-align: center;
+
+        padding: $space-24 !important;
+
+
+        h5 {
+
+            font-size: $fs-20;
+        }
+
+
+        p {
+
+            font-size: $fs-14;
+        }
+
+    }
+    .phone-box {
+
+        min-height: auto;
+
+        padding-top: $space-20;
+    }
+    .phone-img,
+    .phone-img2 {
+
+        max-height: 260px;
+    }
+
+}
+
+@media (max-width:575.98px) {
+
+
+    .features-section {
+
+
+        h2 {
+
+            font-size: $fs-24;
+        }
+
+    }
+    .feature-card {
+
+
+        h5 {
+
+            font-size: $fs-18;
+        }
+
+        p {
+
+            font-size: $fs-14;
+        }
+
+    }
+
+    .feature-icon {
+
+        width: $fs-24;
+
+        height: $fs-24;
+    }
+
+    .phone-img,
+    .phone-img2 {
+
+        max-height: 220px;
+    }
+
+}

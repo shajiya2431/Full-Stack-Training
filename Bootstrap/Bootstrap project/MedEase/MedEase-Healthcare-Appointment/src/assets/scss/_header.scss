@@ -1,0 +1,47 @@
+/* Header */
+
+header {
+  .navbar-brand {
+    font-weight: 600;
+    color: #3b82f6;
+
+    &:hover {
+      color: #3b82f6;
+    }
+  }
+
+  .nav-link {
+    color: #8b8b8b;
+
+    &.active,
+    &:hover {
+      color: #3b82f6;
+    }
+  }
+
+  .btn-primary {
+    min-width: 120px;
+    border-radius: 50rem;
+  }
+
+  .navbar-toggler {
+    border: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  header {
+    .navbar-collapse {
+      margin-top: 1rem;
+    }
+
+    .btn-primary {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}

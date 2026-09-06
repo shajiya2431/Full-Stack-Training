@@ -1,0 +1,29 @@
+{
+  "name": "medease-healthcare-appointment",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/shajiya2431/MedEase-Healthcare-Appointment#readme",
+  "bugs": {
+    "url": "https://github.com/shajiya2431/MedEase-Healthcare-Appointment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shajiya2431/MedEase-Healthcare-Appointment.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "swiper": "^14.0.7"
+  },
+  "devDependencies": {
+    "sass": "^1.102.0",
+    "vite": "^8.2.0"
+  }
+}

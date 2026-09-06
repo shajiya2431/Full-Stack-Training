@@ -1,0 +1,199 @@
+.doctor-expertise {
+
+    overflow: hidden;
+
+    h2 {
+        font-size: $fs-48;
+        font-weight: $fw-medium;
+        color: $heading;
+    }
+
+    .expertise-text {
+        color: $primary;
+        font-style: normal;
+    }
+
+    .see-all {
+        color: $primary;
+        font-weight: $fw-medium;
+        text-decoration: none;
+    }
+
+    /* Swiper */
+
+    .expertiseSwiper {
+
+        overflow: visible;
+        padding-bottom: $space-20;
+    }
+
+    .swiper-slide {
+
+        height: auto;
+    }
+    /* Card */
+
+    .doctor-card {
+
+        height: 100%;
+        background: #F8F8F8;
+        border-radius: $rounded-md;
+        padding: $space-32 $space-24;
+        transition: $transition;
+        &:hover {
+            box-shadow: $shadow;
+        }
+
+    }
+
+    .doctor-card > img {
+
+        width: $fs-48;
+        height: $fs-48;
+
+        object-fit: contain;
+    }
+
+    .doctor-card h4 {
+        margin-top: $space-32;
+        margin-bottom: $space-16;
+
+        font-size: 1.875rem;
+        font-weight: $fw-medium;
+        color: $heading;
+    }
+    .doctor-card p {
+
+        color: $text;
+        line-height: $lh-lg;
+        margin-bottom: $space-24;
+    }
+
+    .doctor-card a {
+
+        display: inline-flex;
+        align-items: center;
+        gap: $space-8;
+        color: $primary;
+        font-weight: $fw-medium;
+        text-decoration: none;
+    }
+
+    .doctor-card a img {
+
+        width: $fs-18;
+
+        height: $fs-18;
+    }
+
+    /* Hide Swiper Default Arrows */
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    /* Custom Arrow */
+
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        cursor: pointer;
+
+
+        img {
+            width: $space-48;
+            display: block;
+        }
+    }
+
+    /* Pagination */
+
+    .swiper-pagination {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $space-8;
+    }
+
+    .swiper-pagination-bullet {
+        width: $space-8;
+        height: $space-8;
+        margin: 0 !important;
+        background: #D4D4D4;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $primary;
+    }
+
+    /* Mobile Button */
+
+    .see-more-btn {
+
+        width: 100%;
+        max-width: 340px;
+        height: 56px;
+        border-radius: $btn-radius;
+        border: 1px solid $primary;
+        color: $primary;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: $space-8;
+        background: transparent;
+        text-decoration: none;
+    }
+
+}
+
+/* Tablet */
+
+@include media-breakpoint-down(lg) {
+
+    .doctor-expertise {
+
+        h2 {
+            font-size: $fs-36;
+        }
+
+
+        .doctor-card h4 {
+            font-size: $fs-24;
+        }
+    }
+}
+
+/* Mobile */
+
+@include media-breakpoint-down(md) {
+
+    .doctor-expertise {
+
+        h2 {
+
+            font-size: $fs-32;
+        }
+
+        .doctor-card {
+            padding: $space-24;
+        }
+
+        .doctor-card h4 {
+            font-size: $fs-20;
+        }
+        .doctor-card p {
+            font-size: $fs-14;
+            line-height: $lh-md;
+        }
+
+        .swiper-button-prev-custom img,
+        .swiper-button-next-custom img {
+
+            width: $space-40;
+        }
+
+    }
+
+}
